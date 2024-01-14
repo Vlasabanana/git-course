@@ -10,8 +10,8 @@ public class Main {
 
         float res1 = num1 + num2;
         float res2 = num1 - num2;
-        float res3 = num1 / num2;
-        float res4 = num1 * num2;
+        float res3 = num1 * num2;
+        float res4 = num1 / num2;
 
         System.out.println(res1 + "\n" + res2 + "\n" + res3 + "\n" + res4);
 
