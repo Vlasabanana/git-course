@@ -1,31 +1,31 @@
 public class lesson3 {
     public static void main(String[] args) {
-        Human human1 = new Human("Bobert", 25);
-        human1.getInfo();
+        Human h1 = new Human("Bobert", 35);
+        Human h2 = new Human("Mack", 44);
+        h1.printNumberOfPeople();
+        h2.printNumberOfPeople();
     }
 }
 
-class Human{
+class Human {
     private String name;
     private int age;
+
+    private static int countPeople;
 
     public Human(String name, int age) {
         this.name = name;
         this.age = age;
+        countPeople++;
     }
-    public void setName(String name){
+
+    public void setName(String name) {
         this.name = name;
     }
     public void setAge(int age) {
         this.age = age;
     }
-    public String getName(){
-        return name;
+    public void printNumberOfPeople(){
+        System.out.println("Number of people is " + countPeople);
     }
-     public int getAge(){
-        return age;
-     }
-     public void getInfo(){
-         System.out.println(name + " " + age);
-     }
 }
